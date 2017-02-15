@@ -39,11 +39,7 @@ public abstract class CollegeCourse {
                  System.out.print(course + ", ");
                 }
     }
-    
-    
-    
-    
-    
+
     
     public String getCourseName() {
         return courseName;
