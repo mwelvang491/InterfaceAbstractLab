@@ -28,11 +28,11 @@ public abstract class CollegeCourse {
         setCourseCredits(credits);
         setPrerequisiteCourseNames(prerequisites);
     }
-      public void displayCourse(){
+      public void displayCourseInfo(){
         menu.handleOutput("Course Name: " + getCourseName() );
         menu.handleOutput("Course Number: " + getCourseNumber() );
         menu.handleOutput("Course Credits: " + getCourseCredits() );
-        menu.handleOutput( "Course Prerequisites: ");
+        menu.handleOutput("Course Prerequisites: ");
              displayCoursePrequisites( );
           
       }

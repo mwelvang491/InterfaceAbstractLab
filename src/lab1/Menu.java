@@ -15,7 +15,7 @@ public class Menu {
         System.out.println(msg);
    }
     
-   public void drawSeperatation(){
-       System.out.println("\n\n---------------------\n");
+   public void drawSeperatationLine(){
+       handleOutput("\n\n---------------------\n");
    }
 }
