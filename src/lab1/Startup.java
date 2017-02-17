@@ -19,9 +19,11 @@ public class Startup {
             IntroJavaCourse introJava = new IntroJavaCourse(2277, 4.0);
             
             advJava.displayCourse();
-            menu.drawSeperatation();
+                 menu.drawSeperatation();
+                 
             introProgramCourse.displayCourse();
-            menu.drawSeperatation();
+                 menu.drawSeperatation();
+                 
             introJava.displayCourse();
             
             
