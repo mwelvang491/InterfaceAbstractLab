@@ -58,7 +58,8 @@ public abstract class CollegeCourse {
         return courseName;
     }
 
-    public void setCourseName(String courseName) {
+    private void setCourseName(String courseName) {
+        //you should not be allowed to change the course name. 
         if(courseName == null || courseName.length() == 0) {
           JOptionPane.showMessageDialog(null, "Error: courseName cannot be null of empty string");
             System.exit(0);

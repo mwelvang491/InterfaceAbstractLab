@@ -17,7 +17,7 @@ public class Startup {
      
        //     AdvancedJavaCourse advJava = new AdvancedJavaCourse(343 , 4.0);
        //    IntroToProgrammingCourse introProgramCourse = new IntroToProgrammingCourse(15642, 2.0);
-       //    IntroJavaCourse introJava = new IntroJavaCourse(2000, 4.0);
+               IntroJavaCourse introJava = new IntroJavaCourse(2000, 4.0);
             
       //      advJava.displayCourseInfo();
                 outputService.drawSeperatationLine();
@@ -25,7 +25,7 @@ public class Startup {
       //      introProgramCourse.displayCourseInfo();
                 outputService.drawSeperatationLine();
                  
-       //     introJava.displayCourseInfo();
+                introJava.displayCourseInfo();
             
             
        }

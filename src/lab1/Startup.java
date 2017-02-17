@@ -14,10 +14,10 @@ public class Startup {
      // String advancedJavaPrereq[] = {"Intro To Programming " , "Intro To Java" , "Database Concepts"};
           OutputService outputService = new OutputService();
      
-            AdvancedJavaCourse advJava = new AdvancedJavaCourse(343 , 4.0);
+            AdvancedJavaCourse advJava = new AdvancedJavaCourse(343, 4.0);
             IntroToProgrammingCourse introProgramCourse = new IntroToProgrammingCourse(15642, 2.0);
             IntroJavaCourse introJava = new IntroJavaCourse(2000, 4.0);
-            
+           
             advJava.displayCourseInfo();
                outputService.outputSeperatationLine();
                  
