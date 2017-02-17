@@ -8,8 +8,8 @@ package lab1;
  */
 public class IntroJavaCourse extends CollegeCourse {
 
-    public IntroJavaCourse(double courseNumber, double credits) {
-        super("Advanced Java", courseNumber, credits, null);
+    public IntroJavaCourse(double courseNumber, double courseCredits) {
+        super("Advanced Java", courseNumber, courseCredits, null);
         String[] introJavaPrereq = {"Intro To Programming"};
         setPrerequisiteCourseNames(introJavaPrereq);
     }

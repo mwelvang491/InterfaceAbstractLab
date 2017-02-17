@@ -11,8 +11,8 @@ import javax.swing.JOptionPane;
 public class AdvancedJavaCourse extends CollegeCourse {
     
 
-    public AdvancedJavaCourse(double courseNumber, double credits) {
-        super("Advanced Java", courseNumber, credits, null);
+    public AdvancedJavaCourse(double courseNumber, double courseCredits) {
+        super("Advanced Java", courseNumber, courseCredits, null);
         String[] advancedJavaPrereq = {"Intro To Programming" , "Intro To Java" , "Database Concepts"};
         setPrerequisiteCourseNames(advancedJavaPrereq);
     }

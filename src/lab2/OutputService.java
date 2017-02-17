@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab1;
+package lab2;
+
 
 /**
  *
@@ -15,8 +16,7 @@ public class OutputService {
         System.out.println(msg);
    }
     
-   public void outputSeperatationLine(){
-     
-       handleOutput("\n---------------------\n");
+   public void drawSeperatationLine(){
+       handleOutput("\n\n---------------------\n");
    }
 }

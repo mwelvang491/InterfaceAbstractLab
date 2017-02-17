@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab1;
+package lab2;
 
 import java.util.StringJoiner;
 import javax.swing.JOptionPane;
@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author mitchell
  */
-public abstract class CollegeCourse {
+public interface CollegeCourse {
     //Super Class For A Generic College Course. 
     private String courseName; //All Courses Have A Name. 
     OutputService menu = new OutputService();
@@ -23,11 +23,11 @@ public abstract class CollegeCourse {
     private double courseCredits = 0.0;     //All Courses Have a value for credits. 
     private String[] prerequisiteCourseNames;  //All Courses Have a value for prerequisites even if they have a value of none.  
 
-    public CollegeCourse(String courseName, double courseNumber, double courseCredits, String[] coursePrerequisites ) {
+    public CollegeCourse(String courseName, double courseNumber, double credits, String[] prerequisites ) {
         setCourseName(courseName);
         setCourseNumber(courseNumber);
-        setCourseCredits(courseCredits);
-        setPrerequisiteCourseNames(coursePrerequisites);
+        setCourseCredits(credits);
+        setPrerequisiteCourseNames(prerequisites);
     }
       public void displayCourseInfo(){
         menu.handleOutput("Course Name: " + getCourseName() );

@@ -11,8 +11,8 @@ import javax.swing.JOptionPane;
  */
 public class IntroToProgrammingCourse extends CollegeCourse {
     //set prerequisites here. 
-    public IntroToProgrammingCourse(double courseNumber, double credits) {
-        super("Intro To Programming", courseNumber, credits, null);
+    public IntroToProgrammingCourse(double courseNumber, double courseCredits) {
+        super("Intro To Programming", courseNumber, courseCredits, null);
         String[] introProgrammingPrereq = {"No Course Preq"};
         setPrerequisiteCourseNames(introProgrammingPrereq);
     }
