@@ -14,13 +14,13 @@ import javax.swing.JOptionPane;
 public abstract class CollegeCourse {
     //Super Class For A Generic College Course. 
     private String courseName; //All Courses Have A Name. 
-    
+    Menu menu = new Menu();
+     
     private double courseNumber; //All Courses Have A Number or comparable Id. 
     //Changed courseNumber to a double from a string. 
     //CourseNumber Should be always be a number, making it a double allows for more flexibily. 
-    
     private double courseCredits = 0.0;     //All Courses Have a value for credits. 
-    private String[] prerequisiteCourseNames;  //All Courses Have a value for prerequisites.  
+    private String[] prerequisiteCourseNames;  //All Courses Have a value for prerequisites even if they have a value of none.  
 
     public CollegeCourse(String courseName, double courseNumber, double credits, String[] prerequisites ) {
         setCourseName(courseName);
@@ -28,6 +28,14 @@ public abstract class CollegeCourse {
         setCourseCredits(credits);
         setPrerequisiteCourseNames(prerequisites);
     }
+      public void displayCourse(){
+        menu.handleOutput("Course Name: " + getCourseName() );
+        menu.handleOutput("Course Number: " + getCourseNumber() );
+        menu.handleOutput("Course Credits: " + getCourseCredits() );
+        menu.handleOutput( "Course Prerequisites: ");
+             displayCoursePrequisites( );
+          
+      }
     
     public String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
@@ -46,6 +54,10 @@ public abstract class CollegeCourse {
     }
 
     public void setCourseName(String courseName) {
+        if(courseName == null || courseName.length() == 0) {
+          JOptionPane.showMessageDialog(null, "Error: courseName cannot be null of empty string");
+            System.exit(0);
+        }
         this.courseName = courseName;
     }
 
@@ -54,6 +66,7 @@ public abstract class CollegeCourse {
     }
 
     public void setCourseNumber(double courseNumber) {
+    
         this.courseNumber = courseNumber;
     }
 
@@ -62,6 +75,10 @@ public abstract class CollegeCourse {
     }
 
     public void setCourseCredits(double courseCredits) {
+        if(courseCredits < 0 || courseCredits > 5.0) {
+            System.out.println("Error: credits must be in the range 0.5 to 4.0");
+            System.exit(0);
+        }
         this.courseCredits = courseCredits;
     }
 
