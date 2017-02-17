@@ -13,7 +13,7 @@ public class AdvancedJavaCourse extends CollegeCourse {
 
     public AdvancedJavaCourse(double courseNumber, double credits) {
         super("Advanced Java", courseNumber, credits, null);
-        String[] advancedJavaPrereq = {"Intro To Programming " , "Intro To Java" , "Database Concepts"};
+        String[] advancedJavaPrereq = {"Intro To Programming" , "Intro To Java" , "Database Concepts"};
         setPrerequisiteCourseNames(advancedJavaPrereq);
     }
   

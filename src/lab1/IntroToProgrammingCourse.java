@@ -13,7 +13,7 @@ public class IntroToProgrammingCourse extends CollegeCourse {
     //set prerequisites here. 
     public IntroToProgrammingCourse(double courseNumber, double credits) {
         super("Intro To Programming", courseNumber, credits, null);
-        String[] introProgrammingPrereq = {"No Course Preq."};
+        String[] introProgrammingPrereq = {"No Course Preq"};
         setPrerequisiteCourseNames(introProgrammingPrereq);
     }
 

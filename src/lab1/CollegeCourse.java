@@ -5,6 +5,7 @@
  */
 package lab1;
 
+import java.util.StringJoiner;
 import javax.swing.JOptionPane;
 
 /**
@@ -14,7 +15,7 @@ import javax.swing.JOptionPane;
 public abstract class CollegeCourse {
     //Super Class For A Generic College Course. 
     private String courseName; //All Courses Have A Name. 
-    Menu menu = new Menu();
+    OutputService menu = new OutputService();
      
     private double courseNumber; //All Courses Have A Number or comparable Id. 
     //Changed courseNumber to a double from a string. 
@@ -43,12 +44,16 @@ public abstract class CollegeCourse {
 
     
     public void displayCoursePrequisites(){
-                for (String course : prerequisiteCourseNames) {
-                 System.out.print(course + ", ");
-                }
+        StringJoiner sj = new StringJoiner(", ","",".");
+            for (String courseName : prerequisiteCourseNames) {
+                sj.add(courseName);
+            }
+            
+            String output = sj.toString();
+            menu.handleOutput(output);
+                 
     }
 
-    
     public String getCourseName() {
         return courseName;
     }

@@ -9,7 +9,7 @@ package lab1;
  *
  * @author mitchell
  */
-public class Menu {
+public class OutputService {
 
    public void handleOutput(String msg) {
         System.out.println(msg);

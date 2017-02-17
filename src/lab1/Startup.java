@@ -12,17 +12,17 @@ package lab1;
 public class Startup {
     public static void main(String[] args) {
      // String advancedJavaPrereq[] = {"Intro To Programming " , "Intro To Java" , "Database Concepts"};
-          Menu menu = new Menu();
+          OutputService outputService = new OutputService();
      
             AdvancedJavaCourse advJava = new AdvancedJavaCourse(343 , 4.0);
             IntroToProgrammingCourse introProgramCourse = new IntroToProgrammingCourse(15642, 2.0);
             IntroJavaCourse introJava = new IntroJavaCourse(2000, 4.0);
             
             advJava.displayCourseInfo();
-                menu.drawSeperatationLine();
+                outputService.drawSeperatationLine();
                  
             introProgramCourse.displayCourseInfo();
-                menu.drawSeperatationLine();
+                outputService.drawSeperatationLine();
                  
             introJava.displayCourseInfo();
             
