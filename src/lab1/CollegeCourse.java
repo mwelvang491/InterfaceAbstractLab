@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 public abstract class CollegeCourse {
     //Super Class For A Generic College Course. 
     private String courseName; //All Courses Have A Name. 
-    OutputService menu = new OutputService();
+    OutputService outputService = new OutputService();
      
     private double courseNumber; //All Courses Have A Number or comparable Id. 
     //Changed courseNumber to a double from a string. 
@@ -30,10 +30,10 @@ public abstract class CollegeCourse {
         setPrerequisiteCourseNames(coursePrerequisites);
     }
       public void displayCourseInfo(){
-        menu.handleOutput("Course Name: " + getCourseName() );
-        menu.handleOutput("Course Number: " + getCourseNumber() );
-        menu.handleOutput("Course Credits: " + getCourseCredits() );
-        menu.handleOutput("Course Prerequisites: ");
+        outputService.handleOutput("Course Name: " + getCourseName() );
+        outputService.handleOutput("Course Number: " + getCourseNumber() );
+        outputService.handleOutput("Course Credits: " + getCourseCredits() );
+        outputService.handleOutput("Course Prerequisites: ");
              displayCoursePrequisites( );
           
       }
@@ -50,7 +50,7 @@ public abstract class CollegeCourse {
             }
             
             String output = sj.toString();
-            menu.handleOutput(output);
+            outputService.handleOutput(output);
                  
     }
 

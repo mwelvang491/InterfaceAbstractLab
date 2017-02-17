@@ -17,6 +17,4 @@ public class IntroToProgrammingCourse extends CollegeCourse {
         setPrerequisiteCourseNames(introProgrammingPrereq);
     }
 
-  
- 
 }
